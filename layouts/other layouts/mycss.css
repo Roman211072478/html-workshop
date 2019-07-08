@@ -1,0 +1,79 @@
+.landing-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #0c5460;
+}
+
+#services{
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+#programing{
+    /*height: 100vh;*/
+    width: 100%;
+    background-color: #ffffff;
+}
+.service-cards{
+    padding-bottom: 20px;
+}
+.service-icons{
+    font-size: 70px;
+    color: #c69500;
+}
+.service-heading{
+    margin-top: 20px;
+}
+.service-text{
+    color:#6c757d;
+}
+.services-banner{
+    padding-top: 10vh;
+}
+.content-text{
+    padding: 10px;
+}
+.team-row{
+    padding-top:100px;
+}
+#ourTeam{
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+.social-icon-outer{
+    background-color: #212529;
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+}
+.social-icon-outer:hover{
+    background-color: #0c5460;
+}
+.social-icon{
+    font-size: 30px;
+    color: white;
+}
+.contact-us{
+    height: 100vh;
+    /*background-image: url("picha.jpg");*/
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("picha.jpg");
+    background-repeat: no-repeat;
+}
+.contact-form{
+    padding-top: 100px;
+}
+.contact-input{
+    height: 52px;
+    margin-bottom: 30px;
+}
+.contact-message{
+    height: 221px;
+}
+/*responsive */
+@media(max-width: 768px) {
+
+    #services{
+        height: auto;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message Sent</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">
+    <script src="fontawesome-free-5.9.0-web/js/all.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+</head>
+<body>
+<div id="contactUs" class="contact-us ">
+    <div class="text-center " style="padding-top: 60px;padding-bottom: 50px;">
+        <h3 class="text-white text-uppercase"><strong>Email Sent</strong></h3>
+        <h4 id="result" class="text-white">helowolrd</h4>
+
+    </div>
+</div>
+
+<script>
+
+    $(document).ready(function () {
+
+
+        var name = getUrlVars()["name"];
+        var email = getUrlVars()["email"];
+
+
+        $("#result")[0].innerHTML= "Hi "+name+", We have received your email from "+ email;
+
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+    });
+</script>
+</body>
+</html>
